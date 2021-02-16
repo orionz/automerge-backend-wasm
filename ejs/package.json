@@ -14,10 +14,13 @@
   },
   "files": [
     "index_bg.wasm",
-    "index.js",
-    "index.d.ts"
+    "index_bg.js",
+    "index.js"
   ],
-  "module": "index.js",
-  "types": "index.d.ts",
+  "type": "module",
+  "exports": {
+    ".":  "index.js"
+  },
+  "module" : "./index.js",
   "sideEffects": false
 }
