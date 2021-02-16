@@ -6,30 +6,18 @@
     "Martin Kleppmann"
   ],
   "description": "An js/wasm wrapper for the rust implementation of automerge-backend",
-  "version": "0.1.2",
+  "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/automerge/automerge-rs"
   },
   "files": [
-    "cjs/package.json",
-    "cjs/index_bg.wasm",
-    "cjs/index.js",
-    "ejs/package.json",
-    "ejs/index_bg.wasm",
-    "ejs/index_bg.js",
-    "ejs/index.js"
+    "index_bg.wasm",
+    "index.js",
+    "index.d.ts"
   ],
-  "type": "commonjs",
-  "exports": {
-    ".": { 
-      "require": "./cjs/index.js",
-      "default": "./ejs/index.js"
-    }
-  },
-  "main" : "./cjs/index.js",
-  "module" : "./ejs/index.js",
+  "module": "index.js",
   "types": "index.d.ts",
   "sideEffects": false
 }
